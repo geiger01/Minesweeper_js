@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="imgs/icon.png" />
+    <link rel="stylesheet" href="styles/style.css" />
+    <title>Minesweeper</title>
+  </head>
+  <body onload="init()">
+    <div class="addOns">
+      <p class="hints" onclick="hintClicked()">💡 💡</p>
+      <p class="safe-click" onclick="safeClick()">👆 👆 👆</p>
+    </div>
+
+    <div class="container">
+      <div class="top">
+        <p><img src="imgs/icon.png" alt="icon" />Minesweeper</p>
+        <p class="lives">🤍 🤍 🤍</p>
+
+        <button onclick="alertErr()">X</button>
+      </div>
+
+      <h2>Game</h2>
+      <h2 onclick="rulesPopup()">Help</h2>
+      <h4 onclick="level(this)">Easy</h4>
+      <h4 onclick="level(this)">Medium</h4>
+      <h4 onclick="level(this)">Hard</h4>
+      <div class="game-body">
+        <div class="score">
+          <div class="timer"><span>0</span></div>
+          <div onclick="init()" class="restart">😮</div>
+          <div class="flag"><span>0</span></div>
+        </div>
+        <table></table>
+      </div>
+    </div>
+    <script src="js/utils.js"></script>
+    <script src="js/game.js"></script>
+    <script src="js/mines.js"></script>
+  </body>
+</html>
