@@ -1,6 +1,7 @@
 # Minesweeper_js
-Minesweeper web app built with vanilla Javascript
+Minesweeper web app built with vanilla Javascript, Html and css
 
 
 Live Site: https://geiger01.github.io/Minesweeper_js/
-![Untitled](https://user-images.githubusercontent.com/78149229/126516854-93fb65ec-69ce-4660-92e4-90d61ba8e234.png)
+
+![Untitled](https://user-images.githubusercontent.com/78149229/126642330-6cc0e127-9c8e-42c5-9d88-a28680cfadfe.png)
