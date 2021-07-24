@@ -54,7 +54,7 @@ function renderBoard(mat) {
       } else if (!gBoard[i][j].isMine) {
         var cellNumber = countMines(i, j, gBoard); //check the number of the returned mine counter and display it
         gBoard[i][j].minesAroundCount = cellNumber;
-        cellContent = cellNumber === 0 ? '' : cellNumber; //if cell number = 0, cellContent='',   else cellContent= number
+        cellContent = cellNumber ? cellNumber : ''; //if cell number = 0, cellContent='',   else cellContent= number
         numColor = ` style="color: ${gColors[cellNumber - 1]}"`;
       }
       if (!gBoard[i][j].isShown) {
